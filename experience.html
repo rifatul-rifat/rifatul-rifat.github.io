@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experience | Md Rifatul Islam Rifat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    
+    <link rel="shortcut icon" href="img/photo.ico">
+
+    <style>
+      blockquote ul li {
+        font-size: 90%;
+      }
+
+      blockquote ul {
+        margin-left: -30px; 
+        margin-top: -5px; 
+        margin-bottom: -5px;
+      }
+
+      .job {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+
+  </head>
+    
+
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class=""><b>Home</b></a></li>  
+        <li><a href="publications_type.html" class=""><b>Publications</b></a></li>   
+        <li><a href="experience.html" class="active"><b>Work Experience</b></a></li>  
+        <li><a href="cv.html" class=""><b>CV</b></a></li>
+      </ul>
+      <hr/>
+    </nav>
+
+
+    <main>
+      <div style="text-align: justify;">
+
+        <!-- job 1 -->
+        <div class="job">
+          <div style="float: left; width: 10%; padding-top: 5px;">
+            <img alt="SSL Wireless" src="img/ssl.jpeg" style="width: 100%; height: 90%;"/>
+          </div>
+          <div style="float: right; width: 87%; margin-left: 3%; margin-bottom: 0px;">
+            <h3 style="margin-bottom: 0px; margin-top: 5px;"><code>Data Scientist</code></h3>
+            <h4 style="margin-top: 0px; margin-bottom: 0px;"> <a href="https://www.sslwireless.com/"> SSL Wireless </a> &middot; <span> Full-time </span></h4>
+            <p style="margin-top: 0px; padding-top: 0px;"><span> Jul 2021 &ndash; Current</span></p>
+            <blockquote>
+              <ul>
+                <li>
+                  <b>Project 1:  Voice Recognition</b><br>
+                  <b>Description:</b> This project aims to facilitate and expedite the work of Sales Representatives, whose job is taking orders of products from
+                   different shops, by providing a voice recognition system for product names. I have built a voice recognition model by fine-tuning the wav2vec2
+                    pre-trained model with a dataset that contais 59 unique product names and it recognizes the product names from voice with high accuracy.
+                </li>
+
+                <li style="margin-top: 10px; margin-bottom: 0px;">
+                  <b>Project 2:  Customer Segmentation</b><br>
+                  <b>Description:</b> In this project, I have analyzed millions of customers’ data and performed customer segmentation for target marketing.
+                   As this company provides the largest payment gateway and SMS gateway aggregator in Bangladesh, every day millions of data are being generated 
+                   here. I have prepared some feature engineering algorithms to generate the customers' demographic features from raw data. Then I have trained 
+                   the K-means Clustering algorithm for building a customer segmentation model that automatically segments all of the customers based on their 
+                   demographics and purchasing behavior.
+                </li>
+                  
+                <li style="margin-top: 10px; margin-bottom: 0px;">
+                  <b>Project 3: Invoice Information Parser</b><br>
+                  <b>Description:</b> In this project, we built a deep learning model that automatically detects all of the information from invoices of different 
+                  formats. We built a skew corrector that provides the aligned images by removing the skewness of the images. Then, we applied the Cloud Vision API 
+                  for recognizing the optical characters from images and applied a pre-trained detectron2 algorithm for detecting the tables from the image of 
+                  invoices. Additionally, we built complex algorithms using the coordinates of characters for 1) parsing several fields out of the table and 
+                  2) organizing the table formatted data as the original format. 
+                </li>
+              </ul>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- job 2 -->
+        <div class="job">
+          <div style="float: left; width: 10%; padding-top: 5px;">
+            <img alt="Robi Axiata Limited" src="img/robi.jpeg" style="width: 80%; height: 80%;"/>
+          </div>
+          <div style="float: right; width: 87%; margin-left: 3%;">
+            <h3 style="margin-bottom: 0px; margin-top: 0px;"><code>Data Scientist</code></h3>
+            <h4 style="margin-top: 0px; margin-bottom: 0px;"> <a href="https://www.robi.com.bd/"> Robi Axiata Limited </a> &middot; <span> Full-time </span></h4>
+            <p style="margin-top: 0px; padding-top: 0px;"><span> Oct 2019 &ndash; Jun 2021</span></p>
+            <blockquote>
+              <ul>
+                <li>
+                  <b>Project 1: Churn Prediction</b><br>
+                  <b>Description:</b> In this project, I have built a DNN model for predicting whether a customer of Robi
+                  Axiata Limited will be churn or not within the following two months. We have used around 1.2M
+                  samples data with 41 features to train this churn prediction model. Also, I have built an interactive
+                  dashboard using Tableau to visualize the churn related insights obtained from the dataset.
+                </li>
+                  
+                <li style="margin-top: 10px;">
+                  <b>Project 2: Next Best Offer prediction (NBO)</b><br>
+                  <b>Description:</b> This project was for the Campaign and Customer Lifecycle Management of Robi
+                  Axiata Ltd. In this project, I developed a DNN model that recommend the next best data pack for
+                  each of the subscribers based on their previous data usage behavior to increase company’s total
+                  data revenue. I trained this model with around 1M customers’ 29 attributes.
+                </li>
+
+                <li style="margin-top: 10px;">
+                  <b>Project 3: Khmer NLP</b><br>
+                  <b>Description:</b> This project was for Smart Axiata, the leading telecom operator in Cambodia, to
+                  analyze the Smart’s Facebook and Chatbot’s data efficiently. In this project, firstly, I built a pretrained model
+                   for the Khmer language from scratch using BERT. For generating the training
+                  corpus, I built a Web Scraper by which I collected around 100K Khmer articles from several
+                  websites. Also, I modified google BERT official code to make compatible with Khmer language.
+                  Then, using Transfer Learning, I have developed three deep learning models for the three different
+                  applications such as Sentiment Analysis, Topic Classification, and NER. I deployed the model using
+                  Google Cloud Function API and Docker.
+                </li>
+
+                <li style="margin-top: 10px;">
+                  <b>Project 4: Gross Addition Revenue Maximization and Automation</b><br>
+                  <b>Description:</b> The objective of this project was maximizing the GA revenue of Robi Axiata Limited
+                  by quality acquisition. We trained a DNN model to predict the number of quality acquisition for
+                  each of the retailers over the country. We also performed the E2E automation so that the model
+                  automatically set the GA target for each of the retailers each month. We also built a Tableau
+                  dashboard that automatically visualizes the analysis of the model outcomes and retailers’
+                  activities to the decision makers.
+                </li>
+              </ul>
+            </blockquote>
+          </div>
+        </div>
+
+
+        <!-- job 3 -->
+        <div class="job">
+          <div style="float: left; width: 10%; padding-top: 13px;">
+            <img alt="SSL Wireless" src="img/silicon.jpeg" style="width: 70%; height: 70%;"/>
+          </div>
+          <div style="float: right; width: 87%; margin-left: 3%; margin-bottom: 0px;">
+            <h3 style="margin-bottom: 0px; margin-top: 5px;"><code> Machine Learning Engineer </code></h3>
+            <h4 style="margin-top: 0px; margin-bottom: 0px;"> <a href="https://www.siliconorchard.com/"> Silicon Orchard Limited </a> &middot; <span> Internship </span></h4>
+            <p style="margin-top: 0px; padding-top: 0px;"><span> Aug 2019 &ndash; Sep 2019</span></p>
+            <blockquote>
+              <ul>
+                <li>
+                  <b>Project 1: Assessment Summarizer</b><br>
+                  <b>Description:</b> The goal of this project was to build a tool using the NLP techniques for the Human
+                  Resource division of a company to make the recruitment process fast. In this project, I automated
+                  the assessment process of the CV using several NLP methods such as Glove, WMD, etc.
+                </li>
+                  
+                <li style="margin-top: 10px; margin-bottom: 0px;">
+                  <b>Project 2: Fraud Detector</b><br>
+                  <b>Description:</b> The goal of this project was to detect fraudulent reviews by leveraging reviewer
+                  historical stylometrics in Amazon, Yelp, Facebook, and Google Reviews. In this project, I formed an
+                  efficient and sophisticated algorithm to detect fraudulent reviews using Natural Language
+                  Processing techniques.
+                </li>
+              </ul>
+            </blockquote>
+          </div>
+        </div>
+        
+      </div>
+        
+    </main>
+    
+
+    <footer>
+      <hr/>
+      Copyright &copy; 2021  <a href="index.html">Md Rifatul Islam Rifat</a>
+    </footer>
+
+  </body>
+
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications | Md Rifatul Islam Rifat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    
+    <link rel="shortcut icon" href="img/photo.ico">
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+      });
+      MathJax.Hub.Queue(function() {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+
+      MathJax.Hub.Config({
+      
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+
+      
+      (function() {
+      function center_el(tagName) {
+        var tags = document.getElementsByTagName(tagName), i, tag;
+        for (i = 0; i < tags.length; i++) {
+          tag = tags[i];
+          var parent = tag.parentElement;
+          
+          if (parent.childNodes.length === 1) {
+            
+            if (parent.nodeName === 'A') {
+              parent = parent.parentElement;
+              if (parent.childNodes.length != 1) continue;
+              parent.firstChild.style.border = 'none';
+            }
+            if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+          }
+        }
+      }
+      var tagNames = ['img', 'embed', 'object'];
+      for (var i = 0; i < tagNames.length; i++) {
+        center_el(tagNames[i]);
+      }
+    })();
+
+    </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153197636-1"></script>
+
+    <script>
+      var host = window.location.hostname;
+      if(host != "localhost")
+      {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-153197636-1'); 
+      }
+    </script>
+  </head>
+
+    <script src="js/jquery-latest.js" type="text/javascript"></script>
+    <script src="js/author-list.js" type="text/javascript"></script>
+    <script src="js/talk-full-list.js" type="text/javascript"></script>
+    <script src="js/paper-full-list.js" type="text/javascript"></script>
+    <script src="js/print-paper.js" type="text/javascript"></script>
+    <script>
+        function toggleAbstract(id) {
+            $("#"+id).slideToggle();
+            return(false);
+        };
+    </script>
+    
+
+  <body>
+    
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class=""><b>Home</b></a></li>  
+        <li><a href="publications_type.html" class="active"><b>Publications</b></a></li>   
+        <li><a href="experience.html" class=""><b>Work Experience</b></a></li>  
+        <li><a href="cv.html" class=""><b>CV</b></a></li>
+      </ul>
+      <hr/>
+    </nav>
+
+
+    <main>
+  
+      <p><span style="color:#00204e">Quick links</span>: <a href="publications_type.html#conference">Conference Papers</a> | <a href="publications_type.html#journal">Journal Papers</a></p>
+
+      <h2 id="a-id-conference-a-conference-papers"><a id="conference"></a> <code>Conference Papers</code></h2>
+
+      <blockquote>
+      <ol reversed>
+              <script>
+                  var i;
+                  for (i = 0; i < papers_full.length; i++) {
+                      if (typeof papers_full[i].conference == "string") 
+                          if (papers_full[i].conference != "") {
+                              document.write("<li class=paper>");
+                              printPaper(papers_full[i], "g");
+                              document.write("</li>");
+                          }
+                  }
+              </script>
+      </ol>
+      </blockquote>
+
+      <p></p>
+
+      <h2 id="a-id-journal-a-journal-papers"><a id="journal"></a> <code>Journal Papers</code></h2>
+
+      <blockquote>
+      <ol reversed>
+              <script>
+                  var i;
+                  for (i = 0; i < papers_full.length; i++) {
+                      if (typeof papers_full[i].journal == "string") 
+                          if (papers_full[i].journal != "Preprint") {
+                              document.write("<li class=paper>");
+                              printPaper(papers_full[i], "g");
+                              document.write("</li>");
+                          }
+                  }
+              </script>
+      </ol>
+      </blockquote>
+
+    </main>
+    
+
+    <footer>
+      <hr/>
+      Copyright &copy; 2021  <a href="index.html">Md Rifatul Islam Rifat</a>
+    </footer>
+
+  </body>
+</html>
+
